@@ -8,21 +8,21 @@ content title: proc{ I18n.t("active_admin.dashboard") } do
 # end
 # end
 columns do
-column do
-panel "Reclamos Recientes" do
-Claim.count
-end
-end
-column do
-panel "Empresas Recientes" do
-Company.count
-end
+  column do
+  panel "Reclamos Recientes" do
+  Claim.count
+  end
 end
 column do
-panel "Usuarios Recientes" do
-User.count
+  panel "Empresas Recientes" do
+  Company.count
+  end
 end
+column do
+  panel "Usuarios Recientes" do
+  User.count
 end
-end
-end
-end
+  end
+    end
+      end
+        end
