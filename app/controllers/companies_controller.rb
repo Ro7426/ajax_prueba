@@ -8,16 +8,11 @@ class CompaniesController < ApplicationController
     @company= Company.new
   end
   
- 
-  
 
   def show 
      @claims = Claim.all.order('created_at DESC') 
   end
 
-
-
-   
   
   def new
     @company = Company.new
